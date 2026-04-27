@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TMT Study</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <style>
+    body { margin:0; background:black; color:white; font-family:Arial; text-align:center; }
+    #ui { padding:20px; max-width: 600px; margin: auto; }
+    canvas { display:none; touch-action:none; }
+    button { padding:10px 20px; font-size:18px; margin:20px; cursor:pointer; }
+    input { padding:10px; font-size:18px; margin-bottom: 10px; }
+    .instruction-box { text-align: left; background: #1a1a1a; padding: 20px; border-radius: 10px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+<div id="ui">
+  <h2>Trail Making Test</h2>
+  <p>Enter Participant ID</p>
+  <input id="pid" placeholder="ID"><br>
+  
+  <button id="startBtn">Start Test</button>
+
+  <div class="instruction-box">
+    <h3>Instructions</h3>
+    <p><strong>Part A:</strong> Connect circles 1-25 in order.</p>
+    <p><strong>Part B:</strong> Alternate between numbers and letters (1-A-2-B...).</p>
+  </div>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
