@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TMT Study</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <style>
+    body { margin:0; background:black; color:white; font-family:Arial; text-align:center; }
+    #ui { padding:20px; }
+    canvas { display:none; touch-action:none; } 
+    button { padding:10px 20px; font-size:18px; margin:10px; cursor:pointer; }
+    input { padding:10px; font-size:18px; }
+  </style>
+</head>
+<body>
+<h2>Trail Making Test</h2>
+  <button id="startBtn">Start</button>
+</div>
+<div class="instruction-box">
+    <h3>Instructions</h3>
+    <ul>
+      <li><strong>Part A (Numbers):</strong> Connect the circles in numerical order from <strong>1 to 25</strong>.</li>
+      <li><strong>Part B (Alternating):</strong> Connect the circles by alternating between numbers and letters in ascending order: <strong>1-A-2-B-3-C</strong> and so on, up to <strong>13-L</strong>.</li>
+      <li><strong>Feedback:</strong> A yellow line will draw between correct hits. If you select the wrong circle, it will <strong>flash red</strong>.</li>
+      <li>Work as quickly and accurately as you can.</li>
+    </ul>
+  </div>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
