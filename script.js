@@ -104,6 +104,7 @@ function startTest(selectedMode) {
   startTime = null;
   ui.style.display = "none";
   canvas.style.display = "block";
+  document.querySelector('.instruction-box').style.display = 'none';
   resize();
   generate();
   draw();
